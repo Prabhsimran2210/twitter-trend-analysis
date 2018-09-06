@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="twitter.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" language="javascript">
+
+        function DisableBackButton() {
+            window.history.forward()
+        }
+        DisableBackButton();
+        window.onload = DisableBackButton;
+        window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+        window.onunload = function () { void (0) }
+     </script>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+         a:link , a:visited 
+{
+    background-color:#1565C0;
+    color:Black;
+    padding:15px ;
+    text-align:center;
+    text-decoration:blink;
+    display:inline-block;
+}
+a:hover , a:active
+{
+    background-color:#80D8FF;
+}
+       
+    </style>
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+</head>
+<body background="NewFolder1/3d-hd-wallpaper-1080p.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td colspan="2"><!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/00.png" alt="00" title="00" id="wows1_0"/></li>
+		<li><img src="data1/images/4.png" alt="4" title="4" id="wows1_1"/></li>
+		<li><img src="data1/images/top5toolstofindanalyzethebesttwitterhashtags.jpg" alt="Top-5-Tools-to-Find-Analyze-The-Best-Twitter-Hashtags" title="Top-5-Tools-to-Find-Analyze-The-Best-Twitter-Hashtags" id="wows1_2"/></li>
+		<li><img src="data1/images/twitter_race_management_advice.png" alt="Twitter_Race_Management_Advice" title="Twitter_Race_Management_Advice" id="wows1_3"/></li>
+		<li><img src="data1/images/untitled00.png" alt="Untitled00" title="Untitled00" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/untitled01.png" alt="http://wowslider.com/" title="Untitled01" id="wows1_5"/></a></li>
+		<li><img src="data1/images/twittertitle900x300.png" alt="Twitter-Title-900x300" title="Twitter-Title-900x300" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="00"><span><img src="data1/tooltips/00.png" alt="00"/>1</span></a>
+		<a href="#" title="4"><span><img src="data1/tooltips/4.png" alt="4"/>2</span></a>
+		<a href="#" title="Top-5-Tools-to-Find-Analyze-The-Best-Twitter-Hashtags"><span><img src="data1/tooltips/top5toolstofindanalyzethebesttwitterhashtags.jpg" alt="Top-5-Tools-to-Find-Analyze-The-Best-Twitter-Hashtags"/>3</span></a>
+		<a href="#" title="Twitter_Race_Management_Advice"><span><img src="data1/tooltips/twitter_race_management_advice.png" alt="Twitter_Race_Management_Advice"/>4</span></a>
+		<a href="#" title="Untitled00"><span><img src="data1/tooltips/untitled00.png" alt="Untitled00"/>5</span></a>
+		<a href="#" title="Untitled01"><span><img src="data1/tooltips/untitled01.png" alt="Untitled01"/>6</span></a>
+		<a href="#" title="Twitter-Title-900x300"><span><img src="data1/tooltips/twittertitle900x300.png" alt="Twitter-Title-900x300"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/home.aspx" 
+                        Width="102px">HOME</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/login.aspx" 
+                        Width="102px">LOGIN</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/aboutus.aspx" 
+                        Width="102px">ABOUT US</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/contactus.aspx" 
+                        Width="102px">CONTACT US</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/feedback.aspx" 
+                        Width="102px">FEEDBACK</asp:HyperLink>
+                </td>
+                <td align="center">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    &nbsp;<asp:Label ID="Label1" runat="server" Text="  &copy BANASTHALI VIDYAPEETH" 
+                         ForeColor="White" Font-Bold="true" Font-Size="Medium"></asp:Label></td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
